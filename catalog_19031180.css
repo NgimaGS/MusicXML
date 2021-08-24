@@ -1,0 +1,211 @@
+Music_Store{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
+    display: block;
+}
+Logo{
+    background-image: url("Images/Logo.png");
+    background-size: cover;
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 150px;
+    height:150px;
+    position: absolute;
+    top: 70%;
+}
+store{
+    display: flow-root;
+    background-image: url("Images/back1.jpg");
+    background-size: contain;
+    padding-bottom: 26%;
+    border-bottom: whitesmoke;
+}
+T_Name{
+    font-size: 50px;
+    font-display: auto;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Gill Sans Extrabold, sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 10%;
+    object-position: top;
+    position:absolute;
+    padding-top: 8%;
+    padding-left:20px;
+}
+Address{
+    display: block;
+    text-align: left;
+    margin-top:3.5%;
+    margin-right:3%;
+    padding-top: 10%;
+    color: whitesmoke;
+    padding-left:20px;
+}
+Country{
+    margin-top: 10px;
+}
+City{
+    margin-top: 10px;
+}
+City:before{content: ",";}
+Street{
+    margin-top: 10px;
+}
+Street:before{content: ",";}
+Contact_Info{
+    display:block;
+    margin-top: 1%;
+    text-align: left;
+    color: whitesmoke;
+    padding-left:20px;
+}
+Email{
+    display: block;
+    margin-top: 1%;
+}
+website{
+    display:block;
+    margin-bottom:3%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+}
+Music{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    width: 450px;
+    display: block;
+    padding: 10px;
+    background-color: whitesmoke;
+    font-size: 90%;
+    margin-left: 8%;
+    margin-block-end: 10px;
+    float: left;
+    position: clip;
+    height: 310px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+Music:hover{
+    transform:scale(1.1);
+    transition: 0.3s;
+    background-size: 210px;
+    background-repeat: no-repeat;
+    background-position-x: 230px;
+    background-position-y: 50px;
+    content-visibility:unset;
+    content-visibility: hidden;
+}
+Music[MID="01"]:hover{
+     background-image: url("Images/M01.jpg");
+}
+Music[MID="02"]:hover{
+     background-image: url("Images/M02.jpg");
+}
+Music[MID="03"]:hover{
+     background-image: url("Images/M03.jpg");
+}
+Music[MID="04"]:hover{
+     background-image: url("Images/M04.jpg");
+}
+Music[MID="05"]:hover{
+     background-image: url("Images/M05.jpg");
+}
+Music[MID="06"]:hover{
+     background-image: url("Images/M06.jpeg");
+}
+Music[MID="07"]:hover{
+     background-image: url("Images/M07.jfif");
+}
+Music[MID="08"]:hover{
+     background-image: url("Images/M08.jpg");
+}
+Music[MID="09"]:hover{
+     background-image: url("Images/M09.jpg");
+}
+Music[MID="10"]:hover{
+     background-image: url("Images/M10.jpg");
+}
+Music[MID="11"]:hover{
+     background-image: url("Images/M011.jpg");
+}
+Music[MID="12"]:hover{
+     background-image: url("Images/M012.jpg");
+}
+Music[MID="13"]:hover{
+     background-image: url("Images/M013.jpg");
+}
+Music[MID="14"]:hover{
+     background-image: url("Images/M14.png");
+}
+Music[MID="15"]:hover{
+     background-image: url("Images/M015.jpg");
+}
+Music[MID="16"]:hover{
+     background-image: url("Images/M16.jpg");
+}
+Name{
+    color: rgb(95, 112, 253);
+    font-weight: bold;
+    font-size: 170%;
+    display: block;
+    margin-bottom: 3%;
+    text-align: centre;
+    border-bottom: 1px solid;
+}
+Song_Details:hover{
+    text-decoration: wavy;
+    opacity: 1;
+}
+Director{
+    margin-bottom:3%;
+    display: list-item;
+}
+Director:before{content: "Director: ";}
+Producer{
+    margin-bottom:3%;
+    display: list-item;
+}
+Producer:before{content: "Producer: ";}
+Writer{
+    margin-bottom:3%;
+    display: list-item;
+}
+Writer:before{content: "Song Writer: ";}
+Singer{
+    margin-bottom:3%;
+    display: list-item;
+}
+Singer:before{content: "Singer: ";}
+Publication_Year{
+    margin-bottom:3%;
+    display: list-item;
+}
+Publication_Year:before{content: "Released Year: ";}
+Genre{
+    margin-bottom:3%;
+    display: list-item;
+}
+Genre:before{content: "Genre: ";}
+Label{
+    margin-bottom:3%;
+    display: list-item;
+}
+Label:before{content: "Label: ";}
+Album{
+    float: right;
+    position:sticky;
+    color: rgb(95, 186, 131);
+}
+Album::before{content: "Album: ";}
+Price{
+    float:left;
+}
+Initial_Price:before{content: "IP:";}
+Discount:before{content: "| Disc:";}
+Final_Price{
+    display: block;
+    padding-top: 10px;
+}
+Final_Price:before{content: "FP:";}

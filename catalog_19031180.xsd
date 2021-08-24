@@ -1,0 +1,143 @@
+<!-- Schema Design- Russian Doll-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Music_Store"> <!-- Main root element-->
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Logo">
+                    <xs:complexType>
+                        <xs:attribute name="Pixel" use="required" />
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="store">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="T_Name" type="xs:string" /><!-- Type shows which type of data the element consists-->
+                            <xs:element name="Address">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Country">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[A-Z]([a-z])+" /> <!-- Restriction pattern used for only allowing alphabets in the element-->
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="City">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[A-Z]([a-z])+" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Street">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[A-Z]([a-zA-Z])+" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Contact_Info" minOccurs="1" maxOccurs="unbounded"> <!-- minOccurs shwos the required minimum times the data has to be store and maxOccurs shows the maximum times an Element can be called-->
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Email" minOccurs="0" type="xs:string" />
+                                        <xs:element name="Phone_No">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="PN_Type" use="required" />
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="BID" use="required" />
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="website">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:anyURI"><!--URI data are stored -->
+                            <xs:pattern value="http://.*" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="Music" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Name" type="xs:string" />
+                            <xs:element name="Song_Details">
+                                <xs:complexType mixed="true">
+                                    <xs:sequence>
+                                        <xs:element name="Director" minOccurs="0" /><!--minOccurs is used to show  optional element -->
+                                        <xs:element name="Producer" />
+                                        <xs:element name="Writer" />
+                                        <xs:element name="Singer" />
+                                        <xs:element name="Publication_Year">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:positiveInteger">
+                                                    <xs:pattern value="[0-9][0-9][0-9][0-9]" /><!-- Only four positive integer data can be stored-->
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Genre">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <!-- enumeration is used to  show which data cna be stored in the element-->
+                                                    <xs:enumeration value="Pop" />
+                                                    <xs:enumeration value="Hip-Hop" />
+                                                    <xs:enumeration value="Synth Pop" />
+                                                    <xs:enumeration value="Rock" />
+                                                    <xs:enumeration value="Heavy Metal" />
+                                                    <xs:enumeration value="Jazz" />
+                                                    <xs:enumeration value="Country Music" />
+                                                    <xs:enumeration value="Dubstep" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Label" minOccurs="0" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Album" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="A_Type" use="required" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Price">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Initial_Price" type="xs:string" />
+                                        <xs:element name="Discount" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="PD_Type" use="required" />
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Final_Price" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="P_Type" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="MID" type="xs:integer" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>  
+</xs:schema>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- linking DTD file-->
+<!DOCTYPE Music_Store SYSTEM "catalog_19031180.dtd">
+<!-- Linking CSS-->
+<?xml-stylesheet href="catalog_19031180.css" type="text/css"?>
+<!-- Linking XSD file in root element-->
+<Music_Store xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_19031180.xsd">
+    <Logo Pixel="1200p"/> <!-- Empty Logo Tag for dispplaying logo-->
+    <store BID="A1">
+        <T_Name>Music Store And Records</T_Name>
+        <Address> <!-- Address of the Store-->
+            <Country>Nepal</Country>
+            <City>Kathmandu</City>
+            <Street>Chabahil</Street>
+        </Address>
+        <Contact_Info>
+            <Email>Yash@gmail.com</Email>
+            <Phone_No PN_Type="Mobile">977-9851697852</Phone_No>
+        </Contact_Info>
+        <Contact_Info>
+            <Phone_No PN_Type="Landline">01-4916510</Phone_No>
+        </Contact_Info>
+    </store>
+    <website>http://www.musicstore.com.np</website> <!--Website link-->
+    <!-- Music details with music id for each music-->
+    <Music MID="01">
+        <Name>Rasputin</Name>
+        <Song_Details> <!-- Song Details contain details regarding song-->
+            <Producer>Frank Farian</Producer>
+            <Writer>Frank Farian</Writer>
+            <Singer>Boney M.</Singer>
+            <Publication_Year>1978</Publication_Year>
+            <Genre>Pop</Genre>
+            <Label>Hansa Sire Atlantic</Label>
+        </Song_Details>
+        <Album A_Type="Standard">Nightflight To Venus</Album>
+        <Price P_Type="NRP">
+            <Initial_Price>Rs.160</Initial_Price>
+            <Discount PD_Type="Sales">Rs.10</Discount>
+            <Final_Price>Rs.155</Final_Price>
+        </Price>
+    </Music>
+    <Music MID="02">
+        <Name>Save Your Tears</Name>
+        <Song_Details>
+            <Director>Cliqua</Director>
+            <Producer>Roisín Audrey Moloney</Producer>
+            <Writer>The Weeknd</Writer>
+            <Singer>The Weeknd</Singer>
+            <Publication_Year>2020</Publication_Year>
+            <Genre>Synth Pop</Genre>
+            <Label>XO Records</Label>
+        </Song_Details>
+        <Album A_Type="Standard">After Hours</Album>
+        <Price P_Type="US Dollar">
+            <Initial_Price>$1.5</Initial_Price>
+            <Final_Price>$1.5</Final_Price>
+        </Price>
+    </Music>
+    <Music MID="03">
+        <Name>Lucid Dreams</Name>
+        <Song_Details>
+            <Director>Cole Bennett</Director>
+            <Producer>Nick Mira</Producer>
+            <Writer>Jarad Higgins</Writer>
+            <Singer>Juice Wrld</Singer>
+            <Publication_Year>2017</Publication_Year>
+            <Genre>Hip-Hop</Genre>
+        </Song_Details>
+        <Album A_Type="Standard">Goodbye and Good Riddance</Album>
+        <Price P_Type="Euro">
+            <Initial_Price>8.30 Euro</Initial_Price>
+            <Discount PD_Type="Weekly">0.5 Euro</Discount>
+            <Final_Price>7.8 Euro</Final_Price>
+        </Price>
+    </Music>
+    <Music MID="04">
+        <Name>Peaches</Name>
+        <Song_Details>
+            <Producer>Harv Shndo</Producer>
+            <Writer>Aaron Simmonds</Writer>
+            <Singer>Justin Bieber</Singer>
+            <Publication_Year>2021</Publication_Year>
+            <Genre>Synth Pop</Genre>
+            <Label>SB Projects</Label>
+        </Song_Details>
+        <Price P_Type="NRP">
+            <Initial_Price>Rs.370</Initial_Price>
+            <Discount PD_Type="Weekly">Rs.50</Discount>
+            <Final_Price>Rs.320</Final_Price>
+        </Price>
+    </Music>
+    <Music MID="05">
+        <Name>Watermelon Sugar</Name>
+        <Song_Details>
+            <Director>Bradley and Pablo</Director>
+            <Producer>Johnson, Kid Harpoon</Producer>
+            <Writer>Harry Styles</Writer>
+            <Singer>Harry Styles</Singer>
+            <Publication_Year>2020</Publication_Year>
+            <Genre>Pop</Genre>
+            <Label>Erskine</Label>
+        </Song_Details>
+        <Album A_Type="Standard">Fine Line</Album>
+        <Price P_Type="INR">
+            <Initial_Price>Rs.250</Initial_Price>
+            <Discount PD_Type="Sales">Rs.10</Discount>
+            <Final_Price>Rs.240</Final_Price>
+        </Price>
+    </Music>
+    <Music MID="06">
+        <Name>I Thought About Killing You</Name>
+        <Song_Details>
+            <Producer>Benny Blanco</Producer>
+            <Writer>Kanye West</Writer>
+            <Singer>Kanye West</Singer>
+            <Publication_Year>2018</Publication_Year>
+            <Genre>Hip-Hop</Genre>
+            <Label>GOOD</Label>
+        </Song_Details>
+        <Album A_Type="Mini-Album">Ye</Album>
+        <Price P_Type="NRP">
+            <Initial_Price>Rs.560</Initial_Price>
+            <Final_Price>Rs.560</Final_Price>
+        </Price>
+    </Music>
+    <Music MID="07">
+        <Name>In Case You Didn't Know</Name>
+        <Song_Details>
+            <Producer>Dann Huff</Producer>
+            <Writer>Brett Young</Writer>
+            <Singer>Brett Young</Singer>
+            <Publication_Year>2017</Publication_Year>
+            <Genre>Country Music</Genre>
+            <Label>UMG</Label>
+        </Song_Details>
+        <Album A_Type="Standard">Brett Young</Album>
+        <Price P_Type="NRP">
+            <Initial_Price>Rs.200</Initial_Price>
+            <Discount PD_Type="Sales">Rs.10</Discount>
+            <Final_Price>Rs.190</Final_Price>
+        </Price>
+    </Music>
+    <Music MID="08">
+        <Name>Heaven</Name>
+        <Song_Details>
+            <Director>Alex Alvga</Director>
+            <Producer>Dann Huff</Producer>
+            <Writer>Shy Carter</Writer>
+            <Singer>Kane Brown</Singer>
+            <Publication_Year>2017</Publication_Year>
+            <Genre>Country Music</Genre>
+            <Label>RCA Nashville</Label>
+        </Song_Details>
+        <Price P_Type="NRP">
+            <Initial_Price>Rs.200</Initial_Price>
+            <Discount PD_Type="Sales">Rs.10</Discount>
+            <Final_Price>Rs.190</Final_Price>
+        </Price>
+    </Music>
+    <Music MID="09">
+        <Name>Ain't Met Us Yet</Name>
+        <Song_Details>
+            <Producer>Matt Cooper</Producer>
+            <Writer>Matt Cooper</Writer>
+            <Singer>Matt Cooper</Singer>
+            <Publication_Year>2021</Publication_Year>
+            <Genre>Country Music</Genre>
+        </Song_Details>
+        <Price P_Type="NRP">
+            <Initial_Price>Rs.300</Initial_Price>
+            <Discount PD_Type="Sales">Rs.20</Discount>
+            <Final_Price>Rs.280</Final_Price>
+        </Price>
+    </Music>
+    <Music MID="10">
+        <Name>Numb</Name>
+        <Song_Details>
+            <Director>Joe Hahn</Director>
+            <Producer>Don Glimore</Producer>
+            <Writer>Linkin Park</Writer>
+            <Singer>Chester Bennington</Singer>
+            <Publication_Year>2003</Publication_Year>
+            <Genre>Rock</Genre>
+            <Label>Warner Bros</Label>
+        </Song_Details>
+        <Price P_Type="NRP">
+            <Initial_Price>Rs.250</Initial_Price>
+            <Discount PD_Type="Sales">Rs.20</Discount>
+            <Final_Price>Rs.230</Final_Price>
+        </Price>
+    </Music>
+    <Music MID="11">
+        <Name>Psychosocial</Name>
+        <Song_Details>
+            <Director></Director>
+            <Producer>Dave Fortman</Producer>
+            <Writer>Slipknot</Writer>
+            <Singer>Corey Taylor</Singer>
+            <Publication_Year>2008</Publication_Year>
+            <Genre>Heavy Metal</Genre>
+            <Label>Roadrunner</Label>
+        </Song_Details>
+        <Price P_Type="NRP">
+            <Initial_Price>Rs.250</Initial_Price>
+            <Discount PD_Type="Sales">Rs.20</Discount>
+            <Final_Price>Rs.230</Final_Price>
+        </Price>
+    </Music>
+    <Music MID="12">
+        <Name>The Sky is Crying</Name>
+        <Song_Details>
+            <Producer>Bobby Robinson</Producer>
+            <Writer>Elmore James</Writer>
+            <Singer>Gary B.B. Coleman</Singer>
+            <Publication_Year>1960</Publication_Year>
+            <Genre>Jazz</Genre>
+            <Label>Fire</Label>
+        </Song_Details>
+        <Album A_Type="">Too Much Weekend</Album>
+        <Price P_Type="NRP">
+            <Initial_Price>Rs.450</Initial_Price>
+            <Discount PD_Type="Sales">Rs.20</Discount>
+            <Final_Price>Rs.430</Final_Price>
+        </Price>
+    </Music>
+    <Music MID="13">
+        <Name>Bangarang</Name>
+        <Song_Details>
+            <Director>Tony T. Datis</Director>
+            <Producer>HK corp</Producer>
+            <Writer>SKRILLEX</Writer>
+            <Singer>Sirah</Singer>
+            <Publication_Year>2012</Publication_Year>
+            <Genre>Dubstep</Genre>
+            <Label>Big Beat</Label>
+        </Song_Details>
+        <Price P_Type="NRP">
+            <Initial_Price>Rs.450</Initial_Price>
+            <Discount PD_Type="Sales">Rs.20</Discount>
+            <Final_Price>Rs.430</Final_Price>
+        </Price>
+    </Music>
+    <Music MID="14">
+        <Name>Like a Stone</Name>
+        <Song_Details>
+            <Producer>Rick Rubin</Producer>
+            <Writer>Audioslave</Writer>
+            <Singer>Christopher John Cornell</Singer>
+            <Publication_Year>2002</Publication_Year>
+            <Genre>Rock</Genre>
+            <Label>Epic</Label>
+        </Song_Details>
+        <Price P_Type="NRP">
+            <Initial_Price>Rs.450</Initial_Price>
+            <Discount PD_Type="Sales">Rs.20</Discount>
+            <Final_Price>Rs.430</Final_Price>
+        </Price>
+    </Music>
+    <Music MID="15">
+        <Name>Act Like You Know</Name>
+        <Song_Details>
+            <Producer>Larry James</Producer>
+            <Writer>Fat Larry's Band</Writer>
+            <Singer>Darryl Grant</Singer>
+            <Publication_Year>1982</Publication_Year>
+            <Genre>Pop</Genre>
+            <Label>Epic</Label>
+        </Song_Details>
+        <Album A_Type="Standard">Breakin' out</Album>
+        <Price P_Type="US Dollar">
+            <Initial_Price>$4.17</Initial_Price>
+            <Discount PD_Type="Sales">$0.17</Discount>
+            <Final_Price>$4</Final_Price>
+        </Price>
+    </Music> 
+    <Music MID="16">
+        <Name>Feel Good Inc.</Name>
+        <Song_Details>
+            <Producer>Gorillaz</Producer>
+            <Writer>Gorillaz</Writer>
+            <Singer>Gorillaz</Singer>
+            <Publication_Year>2005</Publication_Year>
+            <Genre>Hip-Hop</Genre>
+            <Label>Parlophone</Label>
+        </Song_Details>
+        <Album A_Type="Standard">Feel Good Inc.</Album>
+        <Price P_Type="US Dollar">
+            <Initial_Price>$4.15</Initial_Price>
+            <Discount PD_Type="Sales">$0.05</Discount>
+            <Final_Price>$4.1</Final_Price>
+        </Price>
+    </Music>
+</Music_Store>

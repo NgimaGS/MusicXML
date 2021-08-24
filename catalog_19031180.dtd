@@ -1,0 +1,38 @@
+<!-- DTD file for catalog_19031180.xml-->
+<!ELEMENT Music_Store (Logo,store,website,Music+)> <!-- Main root elemnet of the XML file-->
+<!ELEMENT Logo (#PCDATA)>
+<!ATTLIST Logo Pixel CDATA #IMPLIED> <!-- IMPLIED is used to show optional attributes-->
+<!ATTLIST Music_Store xmlns:xsi CDATA #IMPLIED> <!-- Attlist tage is used to define attributes-->
+<!ATTLIST Music_Store xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+<!ELEMENT store (T_Name,Address,Contact_Info+)>
+<!ATTLIST store BID CDATA #REQUIRED>
+<!ELEMENT T_Name (#PCDATA)> <!-- PCDATA refers to normal data without any tag-->
+<!ELEMENT Address (Country,City,Street)>
+<!ELEMENT Country (#PCDATA)>
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT Street (#PCDATA)>
+<!ELEMENT Contact_Info (Email?,Phone_No)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Phone_No (#PCDATA)>
+<!ATTLIST Phone_No PN_Type (Landline|Mobile) #REQUIRED>
+<!ELEMENT website (#PCDATA)>
+<!ELEMENT Music (Name,Song_Details,Album?,Price)><!-- ? is used to show optional elements-->
+<!ATTLIST Music MID CDATA #REQUIRED>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Song_Details (Director?,Producer,Writer,Singer,Publication_Year,Genre,Label?)>
+<!ELEMENT Producer (#PCDATA)>
+<!ELEMENT Writer (#PCDATA)>
+<!ELEMENT Singer (#PCDATA)>
+<!ELEMENT Publication_Year (#PCDATA)>
+<!ELEMENT Genre (#PCDATA)>
+<!ELEMENT Label (#PCDATA)>
+<!ELEMENT Album (#PCDATA)>
+<!ATTLIST Album A_Type CDATA #REQUIRED>
+<!ELEMENT Price (Initial_Price,Discount?,Final_Price)>
+<!ATTLIST Price P_Type CDATA #REQUIRED>
+<!ELEMENT initial_Price (#PCDATA)>
+<!ELEMENT Discount (#PCDATA)>
+<!ATTLIST Discount PD_Type (Weekly|Sales|Premium) #IMPLIED> <!-- This attributes Discount can only contain Weekly, Sales and Premium-->
+<!ELEMENT Final_Price (#PCDATA)>
+<!ELEMENT Director (#PCDATA)>
+<!ELEMENT Initial_Price (#PCDATA)>
